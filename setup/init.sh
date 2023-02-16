@@ -1,7 +1,8 @@
 #!/bin/zsh
 
-# Copy fonts
-cp -a fonts/ ~/Library/Fonts/
+# Copy fonts and stuff
+cp -a ../fonts/ ~/Library/Fonts/
+cp -a ../manual_backups/monitor_profiles/ ~/Library/ColorSync/Profiles
 
 # This installs homebrew itself, and also the command line tools in silent mode
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

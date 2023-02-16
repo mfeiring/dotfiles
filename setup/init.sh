@@ -12,5 +12,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 brew bundle
 
 mkdir ~/.nvm 
+mkdir ~/development
 export STARSHIP_CONFIG=~/dotfiles/config/starship.toml
 source ~/dotfiles/.zshrc

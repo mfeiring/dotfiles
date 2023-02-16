@@ -19,6 +19,7 @@ cask "figma"
 cask "alfred"
 cask "spotify"
 cask "ngrok"
+cask "nordvpn"
 
 # App store
 mas "Xcode", id: 497799835

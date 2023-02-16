@@ -1,5 +1,9 @@
+cask_args appdir: "/Applications"
+
 tap "homebrew/bundle"
 tap "homebrew/core"
+tap "homebrew/cask"
+tap "homebrew/services"
 
 # Code
 brew "mas"

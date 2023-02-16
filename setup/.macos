@@ -1,0 +1,27 @@
+#!/bin/zsh
+
+
+## Only show active apps in dock
+defaults write com.apple.dock static-only -bool TRUE; killall Dock
+
+####################################
+# Menu bar
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 18
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Sound -int 18
+####################################
+
+
+####################################
+# Locations
+
+# Screenshot location
+test -d "${HOME}/Pictures/screenshots" || mkdir -p "${HOME}/Pictures/screenshots"
+defaults write com.apple.screencapture location -string "${HOME}/Pictures/screenshots"
+
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Show the /Volumes folder
+sudo chflags nohidden /Volumes
+
+####################################

@@ -1,0 +1,37 @@
+{
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "workbench.colorTheme": "Dracula Soft",
+  "editor.fontFamily": "'dank mono'",
+  "editor.fontLigatures": true,
+  "stylelint.config": {},
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[postcss]": {
+    "gitlens.codeLens.scopes": ["document"],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.accessibilitySupport": "off",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.quoteStyle": "single",
+  "prettier.singleQuote": true,
+  "todo-tree.highlights.useColourScheme": true,
+  "prettier.jsxSingleQuote": true,
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "svelte.enable-ts-plugin": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.largeFileOptimizations": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "eslint.validate": ["javascript", "svelte"],
+  "window.zoomLevel": 1
+}

@@ -1,0 +1,11 @@
+[alias]
+	co = checkout
+	cm = commit -m
+	cb = checkout -b
+	s = status
+
+[user]
+	name = Mira Feiring
+	email = mirafeiring@gmail.com
+[push]
+	autoSetupRemote = true

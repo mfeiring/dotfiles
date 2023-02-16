@@ -1,0 +1,29 @@
+// Place your key bindings in this file to override the defaults
+[
+  { "key": "f1", "command": "gitlens.openRepoOnRemote" },
+  {
+    "key": "cmd+e",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorHasSelection"
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "${${TM_SELECTED_TEXT}}"
+    }
+  },
+  {
+    "key": "cmd+shift+s",
+    "command": "workbench.action.files.saveAll"
+  }
+  // {
+  //   "key": "cmd+e",
+  //   "command": "editor.action.insertSnippet",
+  //   "when": "editorHasSelection",
+  //   "args": {
+  //     "snippet"
+  //   }
+  // },
+]

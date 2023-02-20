@@ -103,8 +103,8 @@ source $ZSH/oh-my-zsh.sh
 #  zsh plugins
 # ========================================
 
-source ~/.zshrc_plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zshrc_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ========================================
 #  custom scripts
@@ -113,11 +113,11 @@ source ~/.zshrc_plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/dotfiles/zsh-scripts/aliases.sh
 source ~/dotfiles/zsh-scripts/functions.sh
 
-. `brew --prefix`/etc/profile.d/z.sh
+# . `brew --prefix`/etc/profile.d/z.sh
 
 # nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# export NVM_DIR=~/.nvm
+# source `$(brew --prefix nvm)`/nvm.sh
 # nvm end
 
 # pnpm - not sure if necessary
@@ -125,3 +125,6 @@ source $(brew --prefix nvm)/nvm.sh
 # export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
+#this does not work with homebrew. Consider chucking out ohmyzsh
+eval “$(starship init zsh)”
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -3,6 +3,7 @@
 
 ## Only show active apps in dock
 defaults write com.apple.dock static-only -bool TRUE; killall Dock
+# defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
 
 ####################################
 # Menu bar
@@ -17,6 +18,7 @@ defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Sound 
 # Screenshot location
 test -d "${HOME}/Pictures/screenshots" || mkdir -p "${HOME}/Pictures/screenshots"
 defaults write com.apple.screencapture location -string "${HOME}/Pictures/screenshots"
+
 
 # Show the ~/Library folder
 chflags nohidden ~/Library

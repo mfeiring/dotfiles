@@ -7,10 +7,13 @@ tap "homebrew/services"
 
 # Code
 brew "mas"
-brew "starship"
-brew "zsh-completions"
+# doesn't work with ohmyzsh
+# brew "starship"
+brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "pnpm"
+brew "nvm"
+brew "zsh"
 # brew "z"
 
 # Apps
@@ -24,6 +27,7 @@ cask "alfred"
 cask "spotify"
 cask "ngrok"
 cask "nordvpn"
+cask "dropbox"
 
 # App store
 mas "Xcode", id: 497799835

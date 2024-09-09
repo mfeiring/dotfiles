@@ -14,6 +14,8 @@ brew "zsh-syntax-highlighting"
 brew "pnpm"
 brew "nvm"
 brew "zsh"
+brew "exa"
+brew "fx"
 # brew "z"
 
 # Apps
@@ -23,10 +25,10 @@ cask "firefox"
 cask "arc"
 cask "notion"
 cask "figma"
-cask "alfred"
+# cask "alfred"
 cask "spotify"
 cask "ngrok"
-cask "nordvpn"
+# cask "nordvpn"
 cask "dropbox"
 
 # App store

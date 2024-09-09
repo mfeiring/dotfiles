@@ -1,5 +1,23 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 # Inserts a blank line between shell prompts
 add_newline = true
+
+# format = """
+# $all\
+# $fill\
+# $time\
+# $line_break\
+# $character
+# """
+
+# [fill]
+# symbol = " "
+
+# [time]
+# disabled = false
+# style = "bold bright-black"
+# format = "[$time]($style)"
 
 # Customizing the prompt
 
@@ -15,9 +33,19 @@ add_newline = true
 disabled = false
 style = "bold green"
 symbol = "💪"
-format = "[<SUDO> $symbol]($style)"
+format = "[<SUDO> $symbol]($style) "
 
 [time]
 disabled = false
 time_format = "%T"
 format = "🕙 [$time ](bold blue)"
+
+[git_branch]
+symbol = '🌱 '
+truncation_symbol = ''
+# ignore_branches = ['master', 'main']
+
+[git_metrics]
+disabled = false
+added_style = 'bold cyan'
+format = '[+$added]($added_style) | [-$deleted]($deleted_style) '

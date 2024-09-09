@@ -24,14 +24,22 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.preferences.quoteStyle": "single",
   "prettier.singleQuote": true,
+  "prettier.semi": false,
   "todo-tree.highlights.useColourScheme": true,
   "prettier.jsxSingleQuote": true,
-  "svelte.plugin.svelte.note-new-transformation": false,
+  // "svelte.plugin.svelte.format.enable": false,
+  // "svelte.plugin.svelte.format.config.svelteStrictMode": true,
   "svelte.enable-ts-plugin": true,
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.largeFileOptimizations": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "eslint.validate": ["javascript", "svelte"],
+  "editor.tabSize": 2,
+  "files.associations": {
+    "_eslintignore": "ignore"
+  },
+  "css.format.spaceAroundSelectorSeparator": true,
+  "eslint.enable": false,
   "window.zoomLevel": 1
 }

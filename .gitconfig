@@ -9,3 +9,5 @@
 	email = mirafeiring@gmail.com
 [push]
 	autoSetupRemote = true
+[core]
+	symlinks = false
